@@ -3,6 +3,11 @@ Create a NextJs app:
 yarn create next-app
 ```
 
+Open port 3000:
+```
+sudo ufw allow 3000
+```
+
 Rename app/ to pages.
 
 Create pages/_app.js:
@@ -130,4 +135,9 @@ export default function About() {
         </main>
     );
 }
+```
+
+Start the app:
+```
+yarn dev
 ```
