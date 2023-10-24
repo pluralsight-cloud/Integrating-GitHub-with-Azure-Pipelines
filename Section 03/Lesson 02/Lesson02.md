@@ -8,7 +8,20 @@ Open port 3000:
 sudo ufw allow 3000
 ```
 
-Rename app/ to pages.
+Test the application:
+```
+yarn dev
+```
+
+Rename app/ to pages/:
+```
+mv app/ pages
+```
+
+Remove layout.js and page.js:
+```
+rm layout.js page.js
+```
 
 Create pages/_app.js:
 ```
