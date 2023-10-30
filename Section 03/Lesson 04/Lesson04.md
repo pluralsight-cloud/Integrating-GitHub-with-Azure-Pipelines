@@ -1,7 +1,5 @@
 Install Jest packages:
 ```
-yarn add --dev @testing-library/jest-dom @testing-library/react @testing-library/user-event jest jest-environment-jsdom 
-
 yarn add --dev jest @testing-library/react @testing-library/jest-dom @testing-library/user-event jest-environment-jsdom @babel/preset-env @babel/preset-react jest-junit
 ```
 
