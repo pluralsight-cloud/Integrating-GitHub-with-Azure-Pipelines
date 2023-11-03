@@ -73,7 +73,7 @@ import About from '@/pages/about'
 
 describe('About', () => {
 
-    it('should containe the text "Alpha Corp"', () => {
+    it('should containe the text "About"', () => {
         render(<About />);
 
         const getElm = screen.getByText(/About/i);
