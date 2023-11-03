@@ -22,7 +22,6 @@ variables:
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
-
 stages:
 - stage: Test
   displayName: Test stage
@@ -39,15 +38,15 @@ stages:
 
     - script: |
         npm i -g yarn
-    displayName: 'Install yarn'
+      displayName: 'Install yarn'
     
     - script: |
         cd code/ && yarn install
-    displayName: 'Install packages'
+      displayName: 'Install packages'
 
     - script: |
         cd code/ && yarn test
-    displayName: 'Test code'
+      displayName: 'Test code'
 
     - task: PublishTestResults@2
     displayName: 'Publish Test Results junit.xml'
